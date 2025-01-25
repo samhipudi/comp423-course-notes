@@ -33,7 +33,7 @@ git init
 ```
 4. Create a README file linking the tutorial page
 ``` bash
-echo "https://samhipudi.github.io/comp423-course-notes/" > README.md
+echo "https://samhipudi.github.io/comp423-course-notes/tutorials/rust-setup/" > README.md
 git add README.md
 git commit -m "Adding tutorial link to README"
 ```
@@ -123,7 +123,7 @@ fn main() {
 #### Option 2
 
 1. Instead of completing the steps in option 1, you can also run the following command in the terminal: `cargo run`. This command combines both building and running the program. 
-
+gi
 !!! info
     `cargo build` compiles the project and generates and executable, but does not run it. `cargo run` both compiles and runs the project in one step.
 
