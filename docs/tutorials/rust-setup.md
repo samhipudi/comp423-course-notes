@@ -112,18 +112,18 @@ fn main() {
 
 #### Option 1:
 
-1. To compile the project run the following command in the terminal:
+Step 1: To compile the project run the following command in the terminal:
 `cargo build`
 
     !!! info
         This command, like the gcc command which compiles C programs into executables (files that a computer's operating system can run), simply compiles the source code into a binary executable file without executing it. 
 
-2. To run the compiled binary file, run the following command in the terminal:
+Step 2: To run the compiled binary file, run the following command in the terminal:
 `./target/debug/hello_comp423`
 
 #### Option 2:
 
-1. Instead of completing the steps in option 1, you can also run the following command in the terminal: `cargo run`. This command combines both building and running the program. 
+Step 1: Instead of completing the steps in option 1, you can also run the following command in the terminal: `cargo run`. This command combines both building and running the program. 
 
     !!! info
         `cargo build` compiles the project and generates and executable, but does not run it. `cargo run` both compiles and runs the project in one step.
