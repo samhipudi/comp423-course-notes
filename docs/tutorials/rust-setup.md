@@ -46,15 +46,15 @@ git commit -m "Adding tutorial link to README"
 4. Click Create Repository
 
 ### Link your Local Repository to GitHub
-1. Add the GitHub repository as a remote
+1. Add the GitHub repository as a remote one
 ``` bash
 git remote add origin https://github.com/<your-username>/first-rust-project.git
 ```
-2. Rename your default branch name to main if it is not main already using the command below
+2. Rename your default branch name to main if it is not already using the command below
 ``` bash
 git branch -M main
 ```
-3. Push your local commits to the GitHub repository
+3. Push your local commits to your GitHub repository
 ``` bash
 git push --set-upstream origin main
 ```
@@ -80,7 +80,7 @@ git push --set-upstream origin main
 ```
 
 !!! note 
-    This allows us to define the configuration for our development enviornment. `name` = Descriptive name for the container. `image` = The Docker image to use (latest version of a Rust enviornment). `customizations` = Installing the rust-analyzer extension to our enviornment.
+    This allows us to define the configuration for our development enviornment. `name` = Descriptive name for the container. `image` = The Docker image to use (latest version of a Rust environment). `customizations` = Installing the rust-analyzer extension to our environment.
 
 5. Reopen the Project in a VSCode Dev Container by pressing `Ctrl+Shift+P` (`Cmd+Shift+P` for Macs) and type in "Dev Containers: Reopen in Container", and select the option. 
 6. After the dev continer setup completes, open a new terminal pane within VSCode and run `rustc --version` to see your dev continer running a recent version of Rust.
@@ -91,7 +91,7 @@ git push --set-upstream origin main
 ## Creating a Rust Project
 
 ### Create a New Rust Binary Project
-1. In the terminal, run the command:
+1. In your terminal, run the command:
 ``` bash
 cargo new hello_comp423 --bin --vcs none
 ```
@@ -110,7 +110,7 @@ fn main() {
 
 ### Running the project
 
-#### Option 1
+#### Option 1:
 1. To compile the project run the following command in the terminal:
 `cargo build`
 
@@ -120,10 +120,10 @@ fn main() {
 2. To run the compiled binary file, run the following command in the terminal:
 `./target/debug/hello_comp423`
 
-#### Option 2
+#### Option 2:
 
 1. Instead of completing the steps in option 1, you can also run the following command in the terminal: `cargo run`. This command combines both building and running the program. 
-gi
+
 !!! info
     `cargo build` compiles the project and generates and executable, but does not run it. `cargo run` both compiles and runs the project in one step.
 
@@ -144,7 +144,7 @@ git push origin main
 Congratulations! You have now created your first rust project inside of a dev container!
 
 ## Citations
-Many instructions in this tutorial were writted using the following resources:
+Many instructions in this tutorial were written using the following resources:
 
 * COMP423 Course Materials: [COMP423 Starting a Static Website project with MkDocs](https://comp423-25s.github.io/resources/MkDocs/ex00/#tutorial-content-requirements)
 * Rust Documentation: [Documentation Used](https://doc.rust-lang.org/book/ch01-02-hello-world.html)
