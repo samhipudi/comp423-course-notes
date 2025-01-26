@@ -79,14 +79,14 @@ git push --set-upstream origin main
 }
 ```
 
-!!! note 
-    This allows us to define the configuration for our development enviornment. `name` = Descriptive name for the container. `image` = The Docker image to use (latest version of a Rust environment). `customizations` = Installing the rust-analyzer extension to our environment.
+    !!! note 
+        This allows us to define the configuration for our development enviornment. `name` = Descriptive name for the container. `image` = The Docker image to use (latest version of a Rust environment). `customizations` = Installing the rust-analyzer extension to our environment.
 
 5. Reopen the Project in a VSCode Dev Container by pressing `Ctrl+Shift+P` (`Cmd+Shift+P` for Macs) and type in "Dev Containers: Reopen in Container", and select the option. 
 6. After the dev continer setup completes, open a new terminal pane within VSCode and run `rustc --version` to see your dev continer running a recent version of Rust.
 
-!!! success
-    As of January 2025, the latest version is rustc 1.83.0
+    !!! success
+        As of January 2025, the latest version is rustc 1.83.0
 
 ## Creating a Rust Project
 
@@ -111,11 +111,12 @@ fn main() {
 ### Running the project
 
 #### Option 1:
+
 1. To compile the project run the following command in the terminal:
 `cargo build`
 
-!!! info
-    This command, like the gcc command which compiles C programs into executables (files that a computer's operating system can run), simply compiles the source code into a binary executable file without executing it. 
+    !!! info
+        This command, like the gcc command which compiles C programs into executables (files that a computer's operating system can run), simply compiles the source code into a binary executable file without executing it. 
 
 2. To run the compiled binary file, run the following command in the terminal:
 `./target/debug/hello_comp423`
@@ -124,8 +125,8 @@ fn main() {
 
 1. Instead of completing the steps in option 1, you can also run the following command in the terminal: `cargo run`. This command combines both building and running the program. 
 
-!!! info
-    `cargo build` compiles the project and generates and executable, but does not run it. `cargo run` both compiles and runs the project in one step.
+    !!! info
+        `cargo build` compiles the project and generates and executable, but does not run it. `cargo run` both compiles and runs the project in one step.
 
 
 ## Pushing Changes to GitHub Repository
